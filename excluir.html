@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Excluir Produto | ShopKeeper</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>ShopKeeper</h1>
+    <p>Exclusão de produtos</p>
+</header>
+
+<main>
+    <h2>Excluir produto</h2>
+
+    <form action="excluir.php" method="POST"
+          onsubmit="return confirmarExclusao();">
+
+        <label>ID do produto</label>
+        <input type="number" name="id" placeholder="Digite o ID do produto" required>
+
+        <button type="submit" class="btn-excluir">
+            Excluir produto
+        </button>
+
+        <a href="index.html" class="btn btn-voltar">Voltar ao menu</a>
+
+    </form>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>

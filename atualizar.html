@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atualizar Produto | ShopKeeper</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>ShopKeeper</h1>
+    <p>Atualização de produtos</p>
+</header>
+
+<main>
+    <h2>Atualizar produto</h2>
+
+    <form action="atualizar.php" method="POST">
+
+        <label>ID do produto</label>
+        <input type="number" name="id" placeholder="Digite o ID" required>
+
+        <label>Novo preço</label>
+        <input type="number" name="preco" step="0.01" min="0" placeholder="Novo preço" required>
+
+        <label>Nova quantidade</label>
+        <input type="number" name="quantidade" min="0" placeholder="Nova quantidade" required>
+
+        <button type="submit">Atualizar produto</button>
+
+        <a href="index.html" class="btn btn-voltar">Voltar ao menu</a>
+
+    </form>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
